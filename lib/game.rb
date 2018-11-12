@@ -27,6 +27,8 @@ class Game
       elsif roll1 + roll2 == 10
         puts 'SPARE!'
         @userscore += 20
+      elsif roll1 + roll2 == 0
+        puts 'Gutter Game, better luck next time!'
       else
         puts "You're score is #{roll1 + roll2} out of 10"
         @userscore += (roll1 + roll2)
