@@ -12,8 +12,8 @@
 ```
 ## Getting started
 
-** Make sure you have ruby version 2.5.0.
-** In your terminal run `ruby bowling.rb`
+* Make sure you have ruby version 2.5.0.
+* In your terminal run `ruby bowling.rb`
 
 ## TODO
 
