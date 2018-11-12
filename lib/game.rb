@@ -23,10 +23,10 @@ class Game
         puts 'Invalid input'
       elsif roll1 == 10
         puts 'STRIKE!'
-        @userscore += 10
+        @userscore += 30
       elsif roll1 + roll2 == 10
         puts 'SPARE!'
-        @userscore += 10
+        @userscore += 20
       else
         puts "You're score is #{roll1 + roll2} out of 10"
         @userscore += (roll1 + roll2)
