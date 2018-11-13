@@ -15,15 +15,7 @@
 * Make sure you have ruby version 2.5.0.
 * In your terminal run `ruby bowling.rb`
 
-## TODO
-
-### 10th frame
-
-If the player rolls a strike or spare in the 10th frame they can roll the additional balls for the bonus. But they can never roll more than 3 balls in the 10th frame. The additional rolls only count for the bonus not for the regular frame count.
-
-### Perfect Game
-
-A Perfect Game is when the player rolls 12 strikes (10 regular strikes and 2 strikes for the bonus in the 10th frame). The Perfect Game scores 300 points.
+---
 
 ## Bowling Rules
 
@@ -38,3 +30,11 @@ The player has a spare if the knocks down all 10 pins with the two rolls of a fr
 ### Gutter Game
 
 A Gutter Game is when the player never hits a pin (20 zero scores).
+
+### 10th frame
+
+If the player rolls a strike or spare in the 10th frame they can roll the additional balls for the bonus. But they can never roll more than 3 balls in the 10th frame. The additional rolls only count for the bonus not for the regular frame count.
+
+### Perfect Game
+
+A Perfect Game is when the player rolls 12 strikes (10 regular strikes and 2 strikes for the bonus in the 10th frame). The Perfect Game scores 300 points.

@@ -1,32 +1,35 @@
-# Initializes and starts the game
+# Initialize and start the game
 class Game
   attr_accessor :score, :user
+  # Initializes the input and outcomes for running the game
   def initialize
     @score = Game::Scoring.new
     @user = Game::User.new
   end
 
+  # Runs the game
   def run
     @score.run(@user.roll1, @user.roll2)
   end
 
-  # outcomes and scoring
+  # Outcomes and scoring
   class Scoring
     attr_accessor :userscore
-    # keeping score
+    # Initializing the score
     def initialize
       @userscore = 0
     end
 
+    # Setting the score and determining the outcome
     def run(roll1, roll2)
       if roll1 > 10 || roll2 > 10 || roll1 + roll2 > 10
         puts 'Invalid input'
       elsif roll1 == 10
         puts 'STRIKE!'
-        @userscore += 30
+        @userscore += 25
       elsif roll1 + roll2 == 10
         puts 'SPARE!'
-        @userscore += 20
+        @userscore += 17
       elsif roll1 + roll2 == 0
         puts 'Gutter Game, better luck next time!'
       else
@@ -36,8 +39,9 @@ class Game
     end
   end
 
-  # player setup
+  # Player setup
   class User
+    # Users input of both roles
     def roll1
       puts %(What's your roll?)
       gets.chomp.to_i
